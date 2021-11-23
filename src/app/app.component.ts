@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+declare const myTest:any;
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +10,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rajae';
   titl = 'raja';
+  constructor(public router: Router) {};
+  onClick(){
+    myTest();
+  }
 }
